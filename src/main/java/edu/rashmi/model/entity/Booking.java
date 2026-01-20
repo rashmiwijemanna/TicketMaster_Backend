@@ -1,9 +1,6 @@
 package edu.rashmi.model.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Getter
@@ -18,7 +15,9 @@ public class Booking {
     private Long id;
     private Long userId;
     private Long seatId;
-    private double amoundPaid;
-    private String status;
+    private Double amoundPaid;
+
+    @Enumerated(EnumType.STRING)
+    private BookingStatus status;
 
 }
