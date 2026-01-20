@@ -1,8 +1,13 @@
 package edu.rashmi.model.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 @Entity
 @Data
 @Table(name = "users")
