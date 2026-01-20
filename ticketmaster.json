@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "52719276-c720-4669-b3c6-6011cd73e957",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46082050",
+		"_collection_link": "https://rashmi-8797789.postman.co/workspace/rashmi's-Workspace~e5570871-04da-4b67-83d6-48992cd93bd4/collection/46082050-52719276-c720-4669-b3c6-6011cd73e957?action=share&source=collection_link&creator=46082050"
+	},
+	"item": [
+		{
+			"name": "set domain data",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "user 1 holds the seat",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "user 2 tried to hold the seat",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
