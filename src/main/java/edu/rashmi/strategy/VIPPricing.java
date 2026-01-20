@@ -4,7 +4,9 @@ import edu.rashmi.model.dto.PricingResponse;
 import edu.rashmi.model.entity.Event;
 import edu.rashmi.model.entity.User;
 import edu.rashmi.model.entity.UserTier;
+import org.springframework.stereotype.Component;
 
+@Component
 public class VIPPricing implements PricingStrategy{
     @Override
     public PricingResponse calculate(Event event, User user) {

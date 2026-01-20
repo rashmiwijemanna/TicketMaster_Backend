@@ -16,7 +16,7 @@ public class AuditAspect {
     @Autowired
     private AuditLogRepository auditRepo;
 
-    @AfterThrowing(pointcut = "@annotation()AuditFailure", throwing = "ex")
+    @AfterThrowing(pointcut = "@annotation(edu.rashmi.aop.AuditFailure)", throwing = "ex")
     public void logFailure(JoinPoint joinPoint, Exception ex){
         Object[] args= joinPoint.getArgs();
         Long userId=null;
@@ -29,7 +29,7 @@ public class AuditAspect {
         }
 
         AuditLog log= AuditLog.builder()
-                .actions(joinPoint.getSignature().getName())
+                .action(joinPoint.getSignature().getName())
                 .userId(userId)
                 .details("failure"+ex.getMessage())
                 .timestamp(LocalDateTime.now())

@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 public class AuditLog {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String actions;
+    private String action;
     private Long userId;
     private String details;
     private LocalDateTime timestamp;
